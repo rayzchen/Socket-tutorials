@@ -22,5 +22,5 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
                 data = b""
                 while not data:
                     data = conn2.recv(1024)
-                print(addr2, "sends", data.dsecode())
+                print(addr2, "sends", data.decode())
                 conn1.sendall(data)
